@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;
+    font-family: "josefin sans" , sans-serif ;
+    font-weight: 400 ;
+}
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(191, 147, 235);
+    place-items: center;
+}
+
+.inner-div{
+    width:40vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem -0.5rem rgba(0,0,0,0.4);
+}
+.profile__edit1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    width: 140px;
+    top:30px;
+    right:40px;
+  }
+.profile__button1 {
+    border-radius: 50px;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms background, ease-in-out 250ms color;
+
+  }
+  .profile__button1:hover {
+    background: #000000;
+    color: #ffffff;
+  }

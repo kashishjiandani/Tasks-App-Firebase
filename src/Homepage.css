@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;
+    font-family: "josefin sans" , sans-serif ;
+    font-weight: 400 ;
+}
+  
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(102.7deg, #fddaff 8.2%, #dfadfc 19.6%, #adcdfc 36.8%, #adfcf4 73.2%, #caf8d0 90.9%);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inner-div{
+    width:40vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem -0.5rem rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.task-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+    margin: 20px;
+    padding: 20px;
+    width: 95%;
+    margin-top: 50px;
+}
+
+.task-input{
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0,0,0,0.4);
+    border-radius: 30px;
+
+}
+.tasklist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+.addtask{
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.btns{
+    border-radius: 30px !important;
+    margin:10px 4px;
+}
+
+.task-list {
+    max-height: 60vh;
+    overflow: auto;
+  }
+
+  .task-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 20px;
+    width: 100%;
+  }
+  
+  .task-item + .task-item {
+    border-top: 1px solid #eef0f5;
+  }
+  
+  /* .task-item:hover {
+    background-color: #f6fbff;
+    
+  } */
+  
+  .task-name {
+    margin-right: auto;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+
+.profile__picture {
+    background: #ffffff;
+    border-radius: 100px;
+    border: 10px solid #ffffff;
+    height: 125px;
+    position: absolute;
+    top: -40px;
+    left:50px;
+    width: 125px;
+  }
+  .profile__picture:before {
+    border-radius: 100px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
+    content: "";
+    height: calc(100% + 20px);
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: calc(100% + 20px);
+    z-index: -1;
+  }
+  .profile__picture img {
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .profile__edit {
+    flex: none;
+    margin-left: 30px;
+    width: auto;
+    position: absolute;
+    top:10px;
+    right:10px;
+    display: flex;
+
+
+  }
+
+  .profile__button {
+    border-radius: 50px;
+    border: 1px solid rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.7);
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms background, ease-in-out 250ms color;
+    margin: 10px;
+  }
+  .profile__button:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .profile__edit2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    width: 140px;
+    top:30px;
+    right:40px;
+  }
+.profile__button2 {
+    border-radius: 50px;
+    border: 1px solid #dc3545;
+    color:#dc3545;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms background, ease-in-out 250ms color;
+    margin-top: 10px;
+    width: 100px;
+  }
+  .profile__button2:hover {
+    background: #dc3545;
+    color: #ffffff;
+  }
+
+.css-cxgc6-MuiAvatar-root{
+  background: #ffffff;
+  border-radius: 100px;
+  border: 10px solid #ffffff;
+  height: 125px;
+  position: absolute;
+  top: -10px;
+  left:-15px;
+  width: 125px;
+}
+.css-cxgc6-MuiAvatar-root::before{
+  border-radius: 100px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
+  content: "";
+  height: calc(100% + 20px);
+  left: -12px;
+  position: absolute;
+  top: -10px;
+  width: calc(100% + 20px);
+  z-index: -1;
+}
+.css-85sfou-MuiAvatar-root{
+  background: #ffffff;
+  border-radius: 100px;
+  border: 10px solid #ffffff;
+  height: 125px;
+  width: 125px;
+  position: absolute;
+  top: -10px;
+  left:-30px;
+}
+
+input#file-upload-button{
+  background-color: #dc3545;
+}
+
+
+@media screen and (max-width:700px){
+    .task-input{
+        width: 200px;    
+    }
+
+    .task-header{
+
+        width: 200px;
+    }
+    .profile__edit {
+      margin-left: 0;
+      width: 200px;
+      position: relative;
+      top:0;
+      left: 0;
+      /* right:10px; */
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+    }
+    .inner-div{
+      width: 90vw !important;;
+      background-color: #fff;
+      padding: 3rem 8rem;
+      border-radius: 1rem;
+      box-shadow: 1rem 1rem 1rem -0.5rem rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+  }
+  /* .css-cxgc6-MuiAvatar-root{
+    background: #ffffff;
+    border-radius: 100px;
+    border: 10px solid #ffffff;
+    height: 125px;
+    position: absolute;
+    top: -10px;
+    left:-150px;
+    width: 125px;
+  } */
+  .css-cxgc6-MuiAvatar-root::before{
+    border-radius: 100px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
+    content: "";
+    height: calc(100% + 20px);
+    left: -12px;
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: calc(100% + 20px);
+    z-index: -1;
+  }
+
+}
