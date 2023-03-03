@@ -18,6 +18,7 @@ function Homepage() {
   // CREATE TASK
   const [task, setTask] = useState("")
   const [userId, setUserId] = useState(localStorage.getItem('userId'))
+  
 
   const addTask = (e) => {
     e.preventDefault();
@@ -33,17 +34,18 @@ function Homepage() {
   const [taskList, setTaskList] = useState([])
 
   useEffect(() => {
+    setUserId(localStorage.getItem('userId'))
     onValue(ref(db,  `/${userId}`),(snapshot)=>{
       setTaskList([]);
       const data = snapshot.val();
       if(data!==null){
-        Object.values(data).map((task)=>{
+        Object.values(data).forEach((task)=>{
           console.log(data)
           setTaskList((oldArray) => [...oldArray,task]);
         });
       }
     });
-  }, [])
+  }, [userId])
 
   // DELETE TASK
   const handleDelete = (task)=>{
@@ -95,7 +97,7 @@ useEffect(() => {
       });
     }
   );
-}, [])
+}, [userId])
 
 const handleSubmit = () => {
   const imageRef = sRef(storage, `/${userId}/image`);
@@ -159,7 +161,7 @@ const handleSubmit = () => {
           </form>
         </div>
       <div className="logout">
-      <div class="profile__edit2" onClick={handleLogout}><a class="profile__button2" href="#">Log Out</a></div>
+      <div class="profile__edit2" onClick={handleLogout}><a class="profile__button2" href="/">Log Out</a></div>
       </div>
       </div>
     </>
