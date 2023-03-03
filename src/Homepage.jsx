@@ -161,7 +161,7 @@ const handleSubmit = () => {
           </form>
         </div>
       <div className="logout">
-      <div class="profile__edit2" onClick={handleLogout}><a class="profile__button2" href="/">Log Out</a></div>
+      <div class="profile__edit2" onClick={handleLogout}><button class="profile__button2" >Log Out</button></div>
       </div>
       </div>
     </>

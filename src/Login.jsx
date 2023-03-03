@@ -27,7 +27,7 @@ function Login() {
     <>
     <div class="main-div">
       {value? <Homepage/>:
-        <div class="profile__edit1" onClick={handleClick}><a class="profile__button1" href="/">Sign-In With Google</a></div>
+        <div class="profile__edit1" onClick={handleClick}><button class="profile__button1" >Sign-In With Google</button></div>
         // <button onClick={handleClick}>Sign-In With Google</button>
         }
     </div>
