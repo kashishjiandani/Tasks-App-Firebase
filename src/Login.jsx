@@ -16,16 +16,18 @@ function Login() {
         })
     }
 
-    useEffect(() => {
-        setValue(localStorage.getItem('userId'))
-     })
+
+     useEffect(() => {
+      setValue(localStorage.getItem('userId'))
+     }, [])
+     
     
 
   return (
     <>
     <div class="main-div">
       {value? <Homepage/>:
-        <div class="profile__edit1" onClick={handleClick}><a class="profile__button1" href="#">Sign-In With Google</a></div>
+        <div class="profile__edit1" onClick={handleClick}><a class="profile__button1" href="/">Sign-In With Google</a></div>
         // <button onClick={handleClick}>Sign-In With Google</button>
         }
     </div>
